@@ -14,8 +14,8 @@ public class PostMutation implements GraphQLMutationResolver {
         this.postDao = postDao;
     }
 
-    public Post writePost(String title, String text, String category, String authorId){
+    public Post writePost(String title, String category, String authorId, String info){
 
-        return postDao.writePost(title, text, category, authorId);
+        return postDao.writePost(title, category, authorId, info);
     }
 }

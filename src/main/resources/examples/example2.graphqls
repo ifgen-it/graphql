@@ -1,0 +1,11 @@
+ query {
+     posts(count: 10, offset: 0) {
+         id
+         title
+         category
+         authorId
+     		info{
+           text
+         }
+     }
+ }
